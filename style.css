@@ -3,7 +3,7 @@
     --yellow: #9CAFB7;
     --light-yellow: #ffee80;
     --black: #5E5768;
-    --light-color: #587B7F;
+    --light-color: #5E5768;
     --white: #fff;
     --border: .1rem solid rgba(0, 0, 0, .1);
     --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
@@ -16,7 +16,6 @@
     box-sizing: border-box;
     outline: none;
     border: none;
-    text-decoration: none;
     text-transform: capitalize;
     transition: .2s linear;
 }
@@ -131,89 +130,6 @@ body {
 .header.active {
     box-shadow: var(--box-shadow);
     padding: 2rem 9%;
-}
-
-.login-form-container {
-    position: fixed;
-    top: -105%;
-    left: 0;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .5);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
-}
-
-.login-form-container.active {
-    opacity: 1;
-    top: 0;
-}
-
-.login-form-container form {
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: .5rem;
-    box-shadow: var(--box-shadow);
-    background: #121416;
-    border: var(--border);
-    text-align: center;
-    width: 40rem;
-}
-
-.login-form-container form .buttons {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-}
-
-.login-form-container form .buttons .btn {
-    display: block;
-    color: white;
-    width: 100%;
-    margin: 5rem 0;
-}
-
-.login-form-container form h3 {
-    color: white;
-    font-size: 2.5rem;
-    padding-bottom: 1rem;
-    text-transform: uppercase;
-}
-
-.login-form-container form .box {
-    margin: .7rem;
-    width: 100%;
-    text-transform: none;
-    color: black;
-    font-size: 1.6rem;
-    padding: 1rem 1.2rem;
-    border: var(--border);
-    border-radius: .5rem;
-}
-
-.login-form-container form p {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: var(--white);
-}
-
-.login-form-container form p a {
-    color: var(--yellow);
-    text-decoration: underline;
-}
-
-.login-form-container #close-login-form {
-    position: absolute;
-    top: 1.5rem;
-    right: 2.5rem;
-    width: 40px;
-    height: 40px;
-    font-size: 4rem;
-    color: var(black);
-    cursor: pointer;
 }
 
 .home {
@@ -454,53 +370,16 @@ body {
 }
 
 .newsletter form input[type="submit"]:hover {
-    background: #9CAFB7;
-}
-
-.group .group-slider {
-    padding-bottom: 6rem;
-}
-
-.group .group-slider .box {
-    width: 30rem;
-    padding: 2rem;
-    margin: 2rem 0;
-    text-align: center;
-    box-shadow: var(--box-shadow);
+    background: #5E5768;
 }
 
 .group {
-    background-color: #5E5768;
-}
-
-.group .group-slider .swiper-slide-active {
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-    border-radius: .5rem;
-}
-
-.group .group-slider .box img {
-    height: 13rem;
-    width: auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.group .group-slider .box .free p {
-    font-size: 1.4rem;
-    color: var(--light-color);
-    padding: 1rem;
-}
-
-.group .group-slider .box .free h3 {
-    font-size: 2.2rem;
-    color: rgb(255, 255, 255);
+    background-color: #333;
 }
 
 .contact {
-    background-color: #5E5768;
+    background-color: #333;
+    padding-top: -10rem;
 }
 
 .contact .row {
@@ -562,6 +441,9 @@ body {
     color: #191716;
     font-size: 2.2rem;
     padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
 }
 
 .footer .box-container .box a {
@@ -644,7 +526,7 @@ body {
 
 .footer .box .h3 {
     border-radius: 150%;
-    background-color: #ffffff;
+    color: #ffffff;
 }
 
 .box1 {
@@ -652,12 +534,8 @@ body {
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-size: 150%;
+    color: white;
     gap: 1.5rem;
-}
-
-.row {
-    padding-left: 2rem;
-    padding-top: 2rem;
 }
 
 .box {
@@ -665,6 +543,7 @@ body {
     padding-top: 2rem;
     padding-bottom: 3rem;
     font-size: 150%;
+    color: white;
     gap: 1.5rem;
 }
 
@@ -672,4 +551,8 @@ body {
     html {
         font-size: 50%;
     }
+}
+
+.box1 .a {
+    color: white;
 }
