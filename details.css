@@ -17,6 +17,7 @@
 .card-content-container .card{
     position: relative;
     cursor: pointer;
+    text-align: center;
 }
 
 .card-content-container .card .face{
@@ -99,7 +100,6 @@
     border: 1px solid #333;
 }
 .card-content-container .card .face.face2 .card-content .netflix-btn{
-    margin: 15px 0 0;
     display:  inline-block;
     text-decoration: none;
     font-weight: 900;
@@ -109,12 +109,12 @@
     border: 1px solid #333;
 }
 .card-content-container .card .face.face2 .card-content .netflix-btn{
-    margin-left: 70px;
+    
     font-size: 20px;    
     background: #800020;
 }
 .card-content-container .card .face.face2 .card-content .spotify-btn{
-    margin-left: 70px;
+    
     font-size: 20px;
     background: #1B4332;
 }

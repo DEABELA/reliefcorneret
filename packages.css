@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600&display=swap');
 body {
-    background-color: #5E5768;
+    background-color: #333;
 }
 
 html {
@@ -8,6 +8,7 @@ html {
     overflow-x: hidden;
     scroll-padding-top: 7rem;
     scroll-behavior: smooth;
+    color: white;
 }
 
 .heading {
@@ -111,6 +112,7 @@ html {
 }
 
 .header.active {
+    z-index: 2;
     box-shadow: var(--box-shadow);
     padding: 2rem 9%;
 }
@@ -250,6 +252,7 @@ html {
     font-size: 2.5rem;
     color: var(--light-color);
     font-weight: bolder;
+    text-decoration: none;
 }
 
 .header .logo span {
@@ -257,6 +260,7 @@ html {
 }
 
 .header .navbar a {
+    text-decoration: none;
     font-size: 1.7rem;
     color: var(--white);
     margin-left: 17px;
@@ -325,40 +329,6 @@ html {
     color: rgb(0, 0, 0);
 }
 
-.group .group-slider {
-    padding-bottom: 3rem;
-}
-
-.group .group-slider .box {
-    width: 30rem;
-    padding: 2rem;
-    margin: 2rem 0;
-    text-align: center;
-    box-shadow: var(--box-shadow);
-}
-
-.group .group-slider .swiper-slide-active {
-    opacity: 1;
-    transform: scale(1);
-    box-shadow: var(--box-shadow);
-    border: var(--border);
-    border-radius: .5rem;
-}
-
-.group .group-slider .box img {
-    height: 13rem;
-    width: auto;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.group .group-slider .box .free p {
-    font-size: 1.4rem;
-    color: var(--light-color);
-    padding: 1rem;
-}
-
-.group .group-slider .box .free h3 {
-    font-size: 2.2rem;
-    color: rgb(255, 255, 255);
+.footer {
+    position: bottom;
 }
