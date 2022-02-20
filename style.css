@@ -103,7 +103,7 @@ body {
 
 .header .navbar a:hover {
     margin: 0 1rem;
-    color: #191716;
+    color: #1C6E8C;
 }
 
 .header .btn {
@@ -521,7 +521,7 @@ body {
         padding: 1rem;
     }
     .header .navbar a:hover {
-        background: black;
+        background: #1C6E8C;
         color: var(--black);
     }
 }
