@@ -572,3 +572,9 @@ body {
 .netflixpackages {
     margin-bottom: -5rem;
 }
+@media(max-width:505px){
+    iframe{
+        margin: 0 auto;
+        width: 80vw;
+    }
+}
